@@ -1,0 +1,32 @@
+{
+  "name": "ai-code-reviewer-backend",
+  "version": "2.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "langchain",
+    "ai",
+    "code-review",
+    "gemini"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "AI-powered code reviewer using LangChain + Gemini",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@langchain/core": "^1.1.46",
+    "@langchain/google-genai": "^0.1.0",
+    "@langchain/mistralai": "^1.0.8",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "langchain": "^1.4.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
