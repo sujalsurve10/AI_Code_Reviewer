@@ -1,12 +1,11 @@
 # ⚡ AI Code Reviewer v2.0
+> Full-stack AI code review tool built with **LangChain**, **Mistral AI (mistral-large-latest)**, **React**, and **Express**.
 
-> Full-stack AI code review tool built with **LangChain**, **Gemini 2.0 Flash**, **React**, and **Express**.
-
-## ✨ New Features (v2.0)
+## ✨ Features
 
 | Feature | Description |
 |---|---|
-| 🦜 **LangChain Integration** | Uses `@langchain/google-genai` with `RunnableSequence`, `ChatPromptTemplate`, and `StringOutputParser` chains |
+| 🦜 **LangChain Integration** | Uses `@langchain/mistralai` with `RunnableSequence`, `ChatPromptTemplate`, and `StringOutputParser` chains |
 | 🔍 **4 Analysis Modes** | Code Review, Bug Fixer, Complexity Analyzer, Code Explainer |
 | 🌐 **Multi-Language Support** | JavaScript, TypeScript, Python, Java, C, C++ |
 | 🎯 **Focus Areas** | Target reviews by General / Security / Performance / Readability |
@@ -30,7 +29,7 @@ LangChain Service
     └── explainChain      → /ai/explain
     │
     ▼
-Google Gemini 2.0 Flash (via @langchain/google-genai)
+Mistral AI — mistral-large-latest (via @langchain/mistralai)
 ```
 
 ## 🚀 Setup
@@ -39,7 +38,7 @@ Google Gemini 2.0 Flash (via @langchain/google-genai)
 ```bash
 cd BackEnd
 npm install
-echo "GOOGLE_GEMINI_KEY=your_key_here" > .env
+echo "MISTRAL_API_KEY=your_key_here" > .env
 npm run dev
 ```
 
@@ -53,15 +52,15 @@ npm run dev
 ## 🔑 Environment Variables
 
 ```
-GOOGLE_GEMINI_KEY=your_google_ai_studio_key
+MISTRAL_API_KEY=your_mistral_api_key
 ```
 
-Get your key at: https://aistudio.google.com/apikey
+Get your key at: https://console.mistral.ai/api-keys
 
 ## 🛠️ Tech Stack
 
-- **LangChain** — `@langchain/google-genai`, `@langchain/core` (chains, prompts, parsers)
-- **Gemini 2.0 Flash** — fast, capable LLM
+- **LangChain** — `@langchain/mistralai`, `@langchain/core` (chains, prompts, parsers)
+- **Mistral AI** — `mistral-large-latest` — powerful, fast LLM
 - **Express.js** — REST API backend
 - **React + Vite** — frontend
 - **react-simple-code-editor** + **Prism.js** — syntax-highlighted editor
